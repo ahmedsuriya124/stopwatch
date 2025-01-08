@@ -20,4 +20,4 @@ This project is a great example of building a real-world, interactive applicatio
 Feel free to explore and contribute to the project!
 
 
-![screencapture-127-0-0-1-5500-index-html-2025-01-08-12_00_04](https://github.com/user-attachments/assets/2e4eeb9e-1078-4361-afce-b47673d1fc77)
+![screencapture-127-0-0-1-5500-index-html-2025-01-08-12_46_05](https://github.com/user-attachments/assets/9f4a2559-f49e-4c43-a682-c723ec427e2b)
