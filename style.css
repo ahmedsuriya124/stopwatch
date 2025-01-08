@@ -1,0 +1,144 @@
+/* body{
+    background: rgb(59, 57, 69);
+}
+.container{
+    width: 400px;
+    margin: auto;
+    border: 2px solid grey;
+    background: rgb(117, 167, 167);
+}
+h1{
+    text-align: center;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #2a5298, #6dd5fa, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.stopwatch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.stopwatch {
+  background: linear-gradient(135deg, #6dd5fa, #ffffff);
+  border-radius: 15px;
+  padding: 30px 50px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.display {
+  font-size: 50px;
+  color: #000000;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  /* Align buttons in a row */
+  gap: 20px;
+  /* Spacing between buttons */
+}
+
+.btn {
+  background: #ff6e7f;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  max-width: 150px;
+  /* Maximum width for buttons */
+}
+
+.btn:hover {
+  background: #d9a7c7;
+}
+
+#startBtn {
+  background: linear-gradient(45deg, #28a745, #85e085);
+}
+
+#startBtn:hover {
+  background: linear-gradient(45deg, #218838, #6fdb6f);
+  transform: scale(1.1);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+#stopBtn {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+}
+
+#stopBtn:hover {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f);
+  transform: scale(1.1);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+#resetBtn {
+  background: linear-gradient(45deg, #dc3545, #ff7b7b);
+}
+
+#resetBtn:hover {
+  background: linear-gradient(90deg, #ff6a00, #e52d27);
+  transform: scale(1.1);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+  .display {
+    font-size: 40px;
+    /* Adjust font size for smaller screens */
+  }
+
+  .stopwatch {
+    padding: 20px 30px;
+    /* Reduce padding for smaller devices */
+  }
+
+  .controls {
+    flex-direction: column;
+    /* Stack buttons vertically */
+    gap: 10px;
+    /* Reduce space between buttons */
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    /* Make the buttons take full width on small screens */
+    max-width: none;
+    /* Remove max-width to allow full width */
+  }
+}
+
+@media (max-width: 400px) {
+  .display {
+    font-size: 35px;
+    /* Further adjust font size for very small screens */
+  }
+}
